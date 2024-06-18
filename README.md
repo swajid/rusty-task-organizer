@@ -1,7 +1,7 @@
 # rusty-task-organizer
 [![made-with-rust](https://img.shields.io/badge/Made%20with-Rust-1f425f.svg?logo=rust&logoColor=white)](https://www.rust-lang.org/)
 
-A rust task organizer for the terminal
+A simple Rust task organizer for the terminal.
 
 ```
                 _               _            _                                     _              
@@ -15,12 +15,12 @@ A rust task organizer for the terminal
 There is a certain satisfaction in seeing your completed tasks displayed in the terminal. In order to achieve this, first create a text file with your todo list with a new task on each new line. Then, add the following letters to the beginning of each task signifying their status, followed by a space:
 
 
-```
-s = started
-d = done
-p = planned
-n = not started
-```
+| Letter signifying task status | Meaning                                    |
+| ----------------------------- | ------------------------------------------ |
+| "s"                           | Started task                               |
+| "d"                           | Done                                       |
+| "p"                           | Planned = next, i.e. next available time   |
+| "n"                           | Not started = later, i.e. later in the day |
 
 To run: `cargo run`
 
@@ -36,6 +36,7 @@ p sleep early
 ```
 
 # Example Output
+
 ```
 There are 3 planned tasks. 
 All planned tasks are:
